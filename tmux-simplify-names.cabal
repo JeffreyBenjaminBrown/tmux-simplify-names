@@ -1,0 +1,39 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: f0c2b459ee98604c2ab6795f660e2552754335c83bd54dcf2be9a0be46b6fb3e
+
+name:           tmux-simplify-names
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/tmux-simplify-names#readme>
+homepage:       https://github.com/githubuser/tmux-simplify-names#readme
+bug-reports:    https://github.com/githubuser/tmux-simplify-names/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2019 Author name here
+license:        BSD3
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/tmux-simplify-names
+
+library
+  exposed-modules:
+                  Lib
+                , System.Process
+                , Text.Regex
+  other-modules:
+      Paths_tmux_simplify_names
+  hs-source-dirs:
+      src
+  build-depends:
+                base >=4.7 && <5
+              , regex-compat
+              , process
+  default-language: Haskell2010
